@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-   name: nishanth-jenkins-pod
+   name: k8simage
 spec:
    containers:
-   - name: jenkisn-con
+   - name: k8simages
      image: nishanth00/hello-world-0.2-snapshot
      ports:
      - containerPort: 9595
