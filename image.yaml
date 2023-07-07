@@ -7,4 +7,4 @@ spec:
    - name: k8simages
      image: nishanth00/hello-world-0.2-snapshot
      ports:
-     - containerPort: 9595
+     - containerPort: 9590
