@@ -1,10 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-   name: k8simage
+  name: k8s
 spec:
-   containers:
-   - name: k8simages
-     image: nishanth00/hello-world-0.2-snapshot
-     ports:
-     - containerPort: 9590
+  replicas: 3
+  selector:
+    matchLabels:
+      app: jenkapp
+  template:
+    metadata:
+      labels:
+        app: jenkapp
+    spec:
+      containers:
+      - name: k8s image
+        image: nishanth00/hello-world-0.2-snapshot
+        ports:
+        - containerPort: 9590
