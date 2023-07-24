@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: nishanth00/hello-world-0.2-snapshot
+        image: swathimediboyina/hello-world-0.2-snapshot
         ports:
         - containerPort: 3000
